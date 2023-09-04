@@ -17,7 +17,7 @@ namespace OrangeHRM.Pages
         //private readonly ICommon I;
         private readonly ScenarioContext _s;
 
-        String id = "0309";
+        String id = JsonRead.ReaderJsonDataId();
         String msgs;
 
         public EmployeePage(ScenarioContext s)
@@ -157,6 +157,24 @@ namespace OrangeHRM.Pages
         
         Console.WriteLine(s);
              return s;
+        }
+
+        public String Result()
+        {
+            String r = Rec.Text.Split(" ")[0];
+            String num = r.Split("(")[1].Split(")")[0];
+            int n = Int32.Parse(num);
+            String mssg = "";
+            if (n == 1)
+            {
+                mssg = "Record";
+            }
+            else if (n > 1)
+            {
+                mssg = "Records";
+            }
+
+            return mssg;
         }
     }
 }

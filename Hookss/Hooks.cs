@@ -62,12 +62,13 @@ namespace OrangeHRM.Hookss
         [AfterScenario]
         public void TearDownMethod()
         {
-            //d=_container.Resolve<IWebDriver>();
-            //if(d!=null)
-            //{
-            //    Thread.Sleep(8000);
-            //    d.Quit();
-            //}
+            d = _s.Get<ICommon>("Driver").Driver;
+
+            if (d != null)
+            {
+                Thread.Sleep(8000);
+                d.Quit();
+            }
         }
 
         [AfterStep]

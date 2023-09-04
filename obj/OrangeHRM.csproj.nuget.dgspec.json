@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHIVARAJ GUTTEDAR\\source\\repos\\OrangeHRM\\OrangeHRM.csproj": {}
+    "C:\\Users\\SHIVARAJ GUTTEDAR\\OrangeGit\\OrangeHRM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHIVARAJ GUTTEDAR\\source\\repos\\OrangeHRM\\OrangeHRM.csproj": {
+    "C:\\Users\\SHIVARAJ GUTTEDAR\\OrangeGit\\OrangeHRM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHIVARAJ GUTTEDAR\\source\\repos\\OrangeHRM\\OrangeHRM.csproj",
+        "projectUniqueName": "C:\\Users\\SHIVARAJ GUTTEDAR\\OrangeGit\\OrangeHRM.csproj",
         "projectName": "OrangeHRM",
-        "projectPath": "C:\\Users\\SHIVARAJ GUTTEDAR\\source\\repos\\OrangeHRM\\OrangeHRM.csproj",
+        "projectPath": "C:\\Users\\SHIVARAJ GUTTEDAR\\OrangeGit\\OrangeHRM.csproj",
         "packagesPath": "C:\\Users\\SHIVARAJ GUTTEDAR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHIVARAJ GUTTEDAR\\source\\repos\\OrangeHRM\\obj\\",
+        "outputPath": "C:\\Users\\SHIVARAJ GUTTEDAR\\OrangeGit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SHIVARAJ GUTTEDAR\\AppData\\Roaming\\NuGet\\NuGet.Config",

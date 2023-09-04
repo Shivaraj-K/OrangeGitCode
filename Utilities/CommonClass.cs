@@ -6,6 +6,7 @@ using SeleniumExtras.PageObjects;
 using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace OrangeHRM.Utilities
     {
         private readonly ScenarioContext _s;
         WebDriverWait wait;
+        int expl = Int32.Parse(ConfigurationManager.AppSettings["explicit"]);
         public CommonClass(ScenarioContext s)
         {
             _s = s;
@@ -31,7 +33,7 @@ namespace OrangeHRM.Utilities
            Driver = s.Get<DriverIn>("dd").DriverInIt();
             // Driver = new DriverIn().DriverInIt();
 
-            wait = new WebDriverWait(Driver,TimeSpan.FromSeconds(100));
+            wait = new WebDriverWait(Driver,TimeSpan.FromSeconds(expl));
             //PageFactory.InitElements(Driver, this);
            
         }

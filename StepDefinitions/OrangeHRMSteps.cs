@@ -53,9 +53,10 @@ namespace OrangeHRM.StepDefinitions
         [Then(@"Verify Addeed employee present inthe Employee List")]
         public void ThenVerifyAddeedEmployeePresentIntheEmployeeList()
         {
-           // Console.WriteLine(msg+" 66666666666");
-            Assert.AreEqual(msg, "Record");
-           
+            String msgs = e.Result();
+
+            Assert.AreEqual(msg, msgs);
+
         }
 
     }

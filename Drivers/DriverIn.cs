@@ -33,26 +33,27 @@ namespace OrangeHRM.Drivers
             {
                 browser = ConfigurationManager.AppSettings["browser"];
             }
-           // String browser = ConfigurationManager.AppSettings["browser"];
+            int Imp = Int32.Parse(ConfigurationManager.AppSettings["implicit"]);
+            // String browser = ConfigurationManager.AppSettings["browser"];
             String url= ConfigurationManager.AppSettings["url"];
-            Console.WriteLine(browser);
+            //Console.WriteLine(browser);
             if (d == null)
             {
-                if (browser == "chrome")
+                if (browser.ToLower() == "chrome")
                 {
                     d = new ChromeDriver();
                 }
-                else if (browser == "firefox")
+                else if (browser.ToLower() == "firefox")
                 {
                     d = new FirefoxDriver();
                 }
-                else if (browser == "edge")
+                else if (browser.ToLower() == "edge")
                 {
                     d = new EdgeDriver();
                 }
                 d.Url = url;
                 d.Manage().Window.Maximize();
-                d.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+                d.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(Imp);
                 _s.Set(d, "webDriver");
             }
             return d;
